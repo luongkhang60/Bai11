@@ -7,7 +7,7 @@ with st.form('Order đồ uống'):
   jellys = ('Thạch râu câu', 'Thạch nha đam', 'Không thêm thạch')
   option_jelly = st.selectbox('Bạn thích cho loại thạch nào cho đồ uống của bạn?', jellys)
   nums = st.slider('Số lượng bạn muốn đặt:',0, 10, 0)
-  bill = {'Loại đồ uống' : option_drink, 'Đường' : option_sugar, 'Thạch' : option_jelly, 'Số lượng:':nums}
+  bill = {'Loại đồ uống:' : option_drink, 'Đường:' : option_sugar, 'Thạch:' : option_jelly, 'Số lượng:':nums}
   submitted = st.form_submit_button("Xác nhận")
   if submitted:
     st.write('Bạn đã chọn:')
